@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EdTech Prototype - AI Professor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>EdTech — AI Professor</h1>
+      <p class="hint">Enter a course name and let the AI design & teach a module.</p>
+    </header>
+
+    <section id="course-select" class="card">
+      <label for="course-input">Select / Enter Course:</label>
+      <input id="course-input" type="text" placeholder="e.g. Introduction to Python" />
+      <div class="controls-row">
+        <button id="start-btn">Start Course</button>
+        <button id="stop-btn" disabled>Stop</button>
+      </div>
+    </section>
+
+    <section id="professor-area" class="card hidden">
+      <div class="professor-row">
+        <div class="professor-visual">
+          <video id="prof-video" src="professor.mp4" muted></video>
+          <div id="prof-overlay" class="overlay hidden">Speaking...</div>
+        </div>
+
+        <div class="professor-text">
+          <h2 id="module-title">Module</h2>
+          <div id="ai-text" class="ai-text">AI generated content will appear here.</div>
+          <div class="audio-controls">
+            <button id="play-pause-btn">Play</button>
+            <span id="status">Idle</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="interaction">
+        <label for="doubt-input">Any doubts? Ask the professor:</label>
+        <input id="doubt-input" type="text" placeholder="Type a question (or leave empty to skip)" />
+        <button id="ask-btn">Ask</button>
+        <button id="next-module-btn" disabled>Get Assignment</button>
+      </div>
+
+      <div id="assignment" class="card hidden">
+        <h3>Assignment — MCQs</h3>
+        <div id="mcq-list"></div>
+      </div>
+    </section>
+
+    <!-- Footer removed as requested -->
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

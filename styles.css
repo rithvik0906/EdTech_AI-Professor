@@ -1,0 +1,134 @@
+.mcq label {
+  color: #111 !important;
+  text-shadow: none !important;
+}
+
+.mcq input[type="radio"] {
+  accent-color: #111;
+}
+label[for="doubt-input"] {
+  color: #111 !important;
+  text-shadow: none !important;
+}
+h1, h2, label, .hint, .audio-controls span, footer {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* Force black color for specific texts for visibility */
+label[for="course-input"],
+#module-title,
+.topic-title,
+#doubt-label {
+  color: #111 !important;
+  text-shadow: none !important;
+}
+:root{
+  --bg1:#f2f7ff;
+  --card:#ffffff;
+  --accent:#3b82f6;
+  --muted:#6b7280;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  position: relative;
+}
+
+/* Overlay to darken background for text visibility */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container, header, .card, .professor-text, .ai-text, .hint, h1, h2, label, input, button, .audio-controls span, .mcq, .mcq p, .mcq label, footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Make text and cards more readable */
+.card, .ai-text, .mcq {
+  background: rgba(255,255,255,0.92) !important;
+  color: #111827;
+  box-shadow: 0 4px 14px rgba(16,24,40,0.10);
+}
+
+h1, h2, label, .hint, .audio-controls span, footer {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.container{
+  max-width:960px;
+  margin:32px auto;
+  padding:20px;
+}
+
+header h1{margin:0 0 6px 0}
+.hint{color:var(--muted); margin:0 0 18px 0}
+
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:16px;
+  box-shadow:0 4px 14px rgba(16,24,40,0.06);
+  margin-bottom:16px;
+}
+
+.controls-row{display:flex;gap:10px;margin-top:10px}
+.controls-row button{padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+
+.hidden{display:none}
+
+.professor-row{display:flex;gap:18px;align-items:flex-start}
+.professor-visual{
+  width: 100%;
+  height: 320px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-width: 220px;
+  max-width: 400px;
+}
+.professor-visual video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+.overlay{position:absolute;left:0;right:0;bottom:0;padding:6px 8px;background:rgba(0,0,0,0.6);color:#fff;text-align:center;font-size:14px}
+
+.professor-text{flex:1}
+.ai-text{min-height:120px;background:#f9fafb;padding:12px;border-radius:8px;margin-top:8px;white-space:pre-wrap}
+.audio-controls{margin-top:8px;display:flex;gap:8px;align-items:center}
+.audio-controls button{padding:8px 12px;border-radius:8px;border:0;background:#111827;color:#fff;cursor:pointer}
+.audio-controls span{color:var(--muted)}
+
+.interaction{margin-top:12px;display:flex;gap:8px;align-items:center}
+.interaction input{flex:1;padding:8px;border-radius:8px;border:1px solid #e5e7eb}
+.interaction button{padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#fff}
+
+#mcq-list{margin-top:8px}
+.mcq{padding:8px;border-radius:6px;background:#fff;margin-bottom:8px;border:1px solid #eceff3}
+.mcq p{margin:0 0 6px 0}
+.mcq label{display:block;margin-bottom:4px}
+footer{color:var(--muted);text-align:center;margin-top:12px}
