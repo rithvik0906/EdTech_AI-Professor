@@ -43,7 +43,6 @@ An educational platform to learn courses which are created, designed, and taught
 
 1. Clone the repository:
 ```
-bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 ```
