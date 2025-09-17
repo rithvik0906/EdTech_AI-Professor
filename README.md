@@ -50,6 +50,10 @@ cd your-repo-name
 3. Enter a course name (e.g., Python, Java, Web Development).
 4. Click Start Course to begin learning with the AI professor.
 
+## 🌍 Live Demo
+
+[Learn Course](https://rithvik0906.github.io/EdTech_AI-Professor/)
+
 ## 🌟 Future Enhancements
 
 - Add more courses and detailed module generation.
