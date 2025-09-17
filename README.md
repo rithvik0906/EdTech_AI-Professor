@@ -54,6 +54,14 @@ cd your-repo-name
 
 [Learn Course](https://rithvik0906.github.io/EdTech_AI-Professor/)
 
+## 📸 Screenshots
+
+![Course](outputs/course.png)
+![Explanation](outputs/explanation.png)
+![Assignment](outputs/assignment.png)
+![Doubt](outputs/doubt.png)
+![Completion](outputs/completion.png)
+
 ## 🌟 Future Enhancements
 
 - Add more courses and detailed module generation.
